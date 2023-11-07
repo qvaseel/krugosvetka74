@@ -1,0 +1,15 @@
+body, html {
+		font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+		font-size: 24px;
+		line-height: 33px;
+		color: (--color-text);
+		background-color: var(--bg-color);
+}
+
+.container {
+    max-width: var(--container-width);
+    padding: var(--container-padding);
+    margin: 0 auto;
+}

@@ -1,0 +1,212 @@
+.basket_h1 {
+    margin-top: 84px;
+    margin-bottom: 78px;
+    font-weight: 700;
+    color: #2E4555;
+    font-size: 48px;
+}
+
+.basket_buttons {
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: row;
+    width: 527px;
+    justify-content: space-around;
+}
+
+.basket_btn_booked {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--color-text);
+    width: 274px;
+    height: 33px;
+}
+
+.basket_btn_booked::after {
+    margin-top: 10px;
+    content: '';
+    display: block;
+    height: 4px;
+    background: #2E4555;
+    border-radius: 2px 2px 2px 2px;
+}
+
+.basket_btn_paid {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #D9D9D9;
+    width: 252px;
+    height: 33px;
+}
+
+.basket_btn_paid::after {
+    margin-top: 10px;
+    content: '';
+    display: block;
+    height: 4px;
+    background: #D9D9D9;
+    border-radius: 0px 2px 2px 0px;
+}
+
+.basket_full_section {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 270px;
+}
+
+.basket_cards {
+    display: flex;
+    flex-direction: column;
+    margin-right: 157px;
+}
+
+.basket_card {
+    width: 800px;
+    height: 220px;
+    background: var(--bg-color);
+    box-shadow: 0px 10px 20px rgba(46, 69, 85, 0.1);
+    border-radius: 65px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-bottom: 20px;
+}
+
+.basket_card_img_full {
+    position: relative;
+    width: 253px;
+    height: 220px;
+    margin-right: 20px;
+}
+
+.basket_card_img {
+    width: 253px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 65px;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.basket_card_text_head {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--color-text);
+    margin: 0;
+    margin-top: 20px;
+}
+
+.basket_card_text_subhead {
+    font-size: 20px;
+    color: var(--color-text);
+    margin: 0;
+    margin-bottom: 12px;
+}
+
+.basket_card_text_subhead1 {
+    font-size: 20px;
+    color: var(--color-text);
+    margin: 0;
+    margin-bottom: -22px;
+}
+
+.basket_card_price {
+    margin: 0;
+    margin-left: 356px;
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--color-text);
+}
+
+.basket_info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-height: 30px;
+    margin-bottom: 6px;
+}
+
+.basket_card_text_info {
+    font-size: 20px;
+    color: var(--color-text);
+    margin: 0;
+}
+
+.basket_small_img {
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+}
+
+.basket_small_img2 {
+    width: 18px;
+    height: 22px;
+    margin-right: 12px;
+    margin-left: 1px;
+}
+
+.basket_btn {
+    position: absolute;
+    margin-left: 547px;
+    margin-top: 140px;
+    height: 50px;
+    font-size: 20px;
+    padding-top: 8px;
+    font-weight: 600;
+    background-color: var(--color-hover);
+    color: var(--color-text);
+}
+
+.basket_total_card {
+    width: 663px;
+    height: 195px;
+    background: var(--bg-color);
+    box-shadow: 0px 10px 20px rgba(46, 69, 85, 0.1);
+    border-radius: 65px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.basket_total_card_subhead {
+    font-size: 24px;
+    color: var(--color-text);
+    margin: 0;
+    margin-bottom: 2px;
+    margin-top: 21px;
+    margin-left: 40px;
+}
+
+.basket_total_card_price {
+    display: flex;
+    flex-direction: row;
+    width: 583px;
+    justify-content: space-between;
+    margin-left: 40px;
+}
+
+.basket_total_card_price_text {
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--color-text);
+    margin: 0;
+    margin-bottom: 7px;
+}
+
+.basket_btn_total {
+    width: 213px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    position: absolute;
+    margin-left: 410px;
+    margin-top: 106px;
+    padding-top: 8px;
+}

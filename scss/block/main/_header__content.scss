@@ -1,0 +1,22 @@
+.header {
+	color: #fff;
+	&__content {
+		
+		text-align: center;
+
+		p {
+			margin-bottom: 37px;
+		}
+		h1 {
+			font-weight: 400;
+			font-size: 40px;
+			line-height: 80px;
+			margin-bottom: 54px;
+		}
+	}
+	&__title {
+		font-weight: 700;
+		font-size: 128px;
+		line-height: 48px;
+	}
+}

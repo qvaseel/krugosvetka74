@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="shortcut icon" href="./images/logo/logo-icon.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="./css/main.css">
+
+    <script src="./js/app.js" defer></script>
+
+    <title>Профиль</title>
+</head>
+<body>
+
+	<header class="header">
+
+		<div class="panel">
+			<div class="container">
+				<div class="header__panel">
+					<div class="logo">
+						<a href="./index.html"><img src="./images/logo/logo-header.svg" alt=""></a>
+					</div>
+		
+					<div class="header__social">
+						<p class="header__address">площадь Революции, г. Челябинск</p>
+						<div class="social">
+							<a href="https://vk.com/krugosvetka_ural" target="blanc_"><img src="./images/socials/vk.svg" alt=""></a>
+							<a href="https://ok.ru/profile/16606458438?utm_campaign=mobile_share&utm_content=profile" target="blanc_"><img src="./images/socials/ok.svg" alt=""></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="fake-panel"></div>
+		
+		<nav class="nav">
+
+			<div class="container">
+				<ul class="nav__menu">
+
+					<li><a href="./routes.html">Маршруты</a></li>
+					<li><a href="./about-us.html">О нас</a></li>
+					<li><a href="./articles.html">Статьи</a></li>
+					<li><a href="./contacts.html">Контакты</a></li>
+					<li><a href="./basket_main.html">Корзина</a></li>
+					<li><a href="./favourites.html">Избранное</a></li>
+					<li><button href="#" class="settings-btn">
+						Профиль
+
+						<ul class="settings">
+							<li><a href="./settings.html">Настройки</a></li>
+							<li class="btn-entrance">Войти</li>
+						</ul>
+					</button></li>
+					
+				</ul>
+			</div>
+			
+		</nav>
+	</header>
+
+
+	<main class="main contacts-main">
+		<h2 class="name__text">
+			Профиль
+		</h2>
+		<div class="data">
+			<form id="contact-form" action="#">
+				<div class="display_flex">
+					<div class="form_item">
+						<label class="name_form">Имя<br></label>
+						<input class="text_in_form input_first" type="text"  required>
+					</div>
+					<div class="form_item">
+						<label class="name_form">Электронная почта<br></label>
+						<input class="text_in_form input_first" type="email"  required>
+					</div>
+					<div class="form_item">
+						<label class="name_form">Дата рождения<br></label>
+						<input class="text_in_form input_first" type="text"  required>
+					</div>
+				</div>
+				<div class="display_flex margin-top-10px">
+					<div class="form_item">
+						<label class="name_form">Фамилия<br></label>
+						<input class="text_in_form input_first" type="text"  required>
+					</div>
+					<div class="form_item">
+						<label class="name_form">Телефон<br></label>
+						<input class="text_in_form input_first" type="tel" id="phone" name="phone" required>
+					</div>
+					<div class="form_item">
+						<label class="name_form">Город<br></label>
+						<input class="text_in_form input_first" type="text" required ></input>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="display_flex margin-top-50px">
+			<aside class="first">
+			<div class="container-form">
+				<h2 class="cards__text">
+					Сохраненные карты
+				</h2>
+			<form action="" class="form form-none">
+				<div class="form_item">
+					<label class="name_form">Номер карты<br></label>
+					<input class="text_in_form input_nameCard" type="text"  required>
+				</div>
+				<div class="display_flex margin-top-10px">
+					<div class="form_item">
+						<label class="name_form">Срок действия<br></label>
+						<input class="text_in_form input_validityPeriod" type="text"  required>
+					</div>
+					<div class="form_item">
+						<label class="name_form">CVC<br></label>
+						<input class="text_in_form input_CVC" type="text"  required>
+					</div>
+				</div>
+				<button class="btn margin-top-35px">Добавить карту</button>
+			</form>
+		</div>
+		<div class="btn_cards">
+			<div class="display_flex">
+				<p>Добавить</p>
+				<div class="container_img"></div>
+			</div>
+		</div>
+		</aside>
+		<aside class="last">
+			<h2 class="cards__text">
+				Документы
+			</h2>
+			<div class="btn_dock ">
+				<div class="display_flex">
+					<p>Добавить</p>
+					<div class="container_img"></div>
+				</div>
+			</div>
+		</aside>
+		</div>
+		
+		
+	</main>
+
+	<div class="popup popup-entrance none" id="popup popup-entrance">
+		<div class="popup__body">
+			<div class="popup__content">
+				<button class="popup__close"></button>
+				<h3 class="popup__title title">
+					Вход
+				</h3>
+				<form class="popup__form popup__form_entrance">
+					<label for="tel">
+						<p class="popup__text">Телефон</p>
+						<input type="tel" id="tel">
+						<button class="btn__entrance">Войти</button>
+						<p>или</p>
+						<button class="btn__registration" type="button">Зарегистрироваться</button>
+						<p class="popup__warning">Авторизируясь, вы соглашаетесь 
+							с Политикой конфиденциальности</p>
+					</label>
+				</form>
+
+				<form class="popup__form popup__form_registration none">
+					<label for="tel">
+						<p class="popup__text">Телефон</p>
+						<input type="tel" id="tel">
+						<p class="popup__text">Пароль</p>
+						<input type="password" id="tel">
+						<p class="popup__text">Повторите пароль</p>
+						<input type="password" id="tel">
+						<button class="btn__entrance">Зарегистрироваться</button>
+						<p class="popup__warning">Авторизируясь, вы соглашаетесь 
+							с Политикой конфиденциальности</p>
+					</label>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__row">
+				<div class="logo">
+					<a href="#"><img src="./images/logo/logo-footer.png" alt=""></a>
+				</div>
+				<ul class="nav-menu">
+					<il><a href="./routes.html">Маршруты</a></il>
+				</ul>
+				<ul class="about-us">
+					<li><a href="#">О нас</a></li>
+					<li><a href="./articles.html">Статьи</a></li>
+					<li><a href="./contacts.html">Контакты</a></li>
+				</ul>
+				<ul class="account">
+					<li><a href="#">Профиль</a></li>
+					<li><a href="./basket.html">Корзина</a></li>
+					<li><a href="./favourites.html">Избранное</a></li>
+				</ul>
+				<div class="social">
+					<a href="https://vk.com/krugosvetka_ural" target="_blank"><img src="./images/socials/vk.svg" alt="vk"></a>
+					<a href="https://ok.ru/profile/16606458438?utm_campaign=mobile_share&utm_content=profile" target="_blank"><img src="./images/socials/ok.svg" alt="ok"></a>
+					<a href="https://t.me/krugosvetka_74" target="_blank"><img src="./images/socials/tg.svg" alt="tg" target="_blank"></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+<script type="text/javascript">
+	const myBtn = document.querySelector('.btn_cards')
+	const myForm = document.querySelector('.form')
+	const containerForm = document.querySelector('.container-form')
+	const btnCreate = document.querySelector('.btn')
+
+	let i = 0;
+
+	myBtn.addEventListener('click', ()=> {
+		if (i===0) {
+			myForm.classList.remove('form-none')
+			i++;
+		}
+		else {
+			containerForm.append(myForm.cloneNode(true))
+		}
+	})
+</script>
+</html>

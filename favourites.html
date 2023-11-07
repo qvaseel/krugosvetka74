@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="shortcut icon" href="./images/logo/logo-icon.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="./css/main.css">
+		<link rel="stylesheet" href="./css/favourite.css">
+
+    <script src="./js/app.js" defer></script>
+    <script src="./js/favourites.js" defer></script>
+
+    <title>Избранное</title>
+</head>
+<body>
+
+	<header class="header">
+
+		<div class="panel">
+			<div class="container">
+				<div class="header__panel">
+					<div class="logo">
+						<a href="./index.html"><img src="./images/logo/logo-header.svg" alt=""></a>
+					</div>
+		
+					<div class="header__social">
+						<p class="header__address">площадь Революции, г. Челябинск</p>
+						<div class="social">
+							<a href="https://vk.com/krugosvetka_ural" target="blanc_"><img src="./images/socials/vk.svg" alt=""></a>
+							<a href="https://ok.ru/profile/16606458438?utm_campaign=mobile_share&utm_content=profile" target="blanc_"><img src="./images/socials/ok.svg" alt=""></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="fake-panel"></div>
+		
+		<nav class="nav">
+
+			<div class="container">
+				<ul class="nav__menu">
+
+					<li><a href="./routes.html">Маршруты</a></li>
+					<li><a href="./about-us.html">О нас</a></li>
+					<li><a href="./articles.html">Статьи</a></li>
+					<li><a href="./contacts.html">Контакты</a></li>
+					<li><a href="./basket_main.html">Корзина</a></li>
+					<li><a href="./favourites.html">Избранное</a></li>
+					<li><button href="#" class="settings-btn">
+						Профиль
+
+						<ul class="settings">
+							<li><a href="./settings.html">Настройки</a></li>
+							<li class="btn-entrance">Войти</li>
+						</ul>
+					</button></li>
+					
+				</ul>
+			</div>
+			
+		</nav>
+	</header>
+
+	<section class="form-tour">
+
+		<div class="container">
+			<form action="" class="tour"> 
+				<h2 class="izb">Избранное</h2>
+				<div class = "fav-main">
+					<div class="fav-obj">
+						<div class="sosat" style="margin-bottom: 20px;">
+							<div class="obj">
+								<img src="./images/cards/Rectangle 62.png" alt="img">
+								<div class="obj-textarea">
+									<p class="card-main-text">
+										Музей Бажова, фарфоровый <br>завод, Сысерть
+									</p>
+									<p class="card-text">экскурсия</p>
+									<div class="text-time" style="margin-top: 17px;">
+										<img src="./images/cards/Vector.png" alt="img">
+										<p class="card-text" style="font-size: 20px; margin-left: 12px;">1 день</p>
+									</div>
+									<div class="text-time">
+										<img src="./images/cards/Vector (1).png" alt="img">
+										<p class="card-text" style="font-size: 20px; margin-left: 14px;">5 мест</p>
+									</div>
+								</div>
+								<div class="obj-button">
+									<p class="obj-price">2550 руб.</p>
+									<button class="btn" style="padding: 0; width: 223px; height: 50px; font-size: 20px;">Забронировать</button>
+								</div>
+							</div>
+							<label>
+								<input type="checkbox" id="chech-1" class="checkbox real-checkbox">
+								<span class="castom-checkbox"></spa>
+							</label>
+						</div>
+	
+						<div class="sosat">
+							<div class="obj">
+								<img src="./images/cards/Rectangle 69.png" alt="img">
+								<div class="obj-textarea">
+									<p class="card-main-text">
+										Колокольня, Семибратка, Златоуст
+									</p>
+									<p class="card-text">экскурсия</p>
+									<div class="text-time" style="margin-top: 17px;">
+										<img src="./images/cards/Vector.png" alt="img">
+										<p class="card-text" style="font-size: 20px; margin-left: 12px;">1 день</p>
+									</div>
+									<div class="text-time">
+										<img src="./images/cards/Vector (1).png" alt="img">
+										<p class="card-text" style="font-size: 20px; margin-left: 14px;">3 места</p>
+									</div>
+								</div>
+								<div class="obj-button">
+									<p class="obj-price">1850 руб.</p>
+									<button class="btn" style="padding: 0; width: 223px; height: 50px; font-size: 20px;">Забронировать</button>
+								</div>
+							</div>
+							<label>
+								<input type="checkbox" id="chech-1" class="checkbox real-checkbox">
+								<span class="castom-checkbox"></spa>
+							</label>
+							
+						</div>
+						
+					</div>
+					<div class="fav-choosen" style="margin-left: 87px;">
+						<div class="obj" style="width: 663px; height: 195px;">
+							<div class="obj-textarea" style="margin: 20px 0 0px 35px">
+								<p class="card-text" style="font-size: 24px; margin-bottom: 7px;"><sapn class="kol-sosat">0</sapn> товара</p>
+								<p class="card-main-text" style="font-size: 32px;">Выбрано:</p>
+							</div>
+							<div class="obj-button" style="margin-left: 405px; margin-top: 75px;">
+								<p class="obj-price kol-card">0</p>
+								<a class="btn2">В корзину</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+
+	</section>
+
+	<div class="popup popup-entrance none" id="popup popup-entrance">
+		<div class="popup__body">
+			<div class="popup__content">
+				<button class="popup__close"></button>
+				<h3 class="popup__title title">
+					Вход
+				</h3>
+				<form class="popup__form popup__form_entrance">
+					<label for="tel">
+						<p class="popup__text">Телефон</p>
+						<input type="tel" id="tel">
+						<button class="btn__entrance">Войти</button>
+						<p>или</p>
+						<button class="btn__registration" type="button">Зарегистрироваться</button>
+						<p class="popup__warning">Авторизируясь, вы соглашаетесь 
+							с Политикой конфиденциальности</p>
+					</label>
+				</form>
+
+				<form class="popup__form popup__form_registration none">
+					<label for="tel">
+						<p class="popup__text">Телефон</p>
+						<input type="tel" id="tel">
+						<p class="popup__text">Пароль</p>
+						<input type="password" id="tel">
+						<p class="popup__text">Повторите пароль</p>
+						<input type="password" id="tel">
+						<button class="btn__entrance">Зарегистрироваться</button>
+						<p class="popup__warning">Авторизируясь, вы соглашаетесь 
+							с Политикой конфиденциальности</p>
+					</label>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer">
+		
+		<div class="container">
+
+			<div class="footer__row">
+				<div class="logo">
+					<a href="#"><img src="./images/logo/logo-footer.png" alt=""></a>
+				</div>
+				
+				<ul class="nav-menu">
+					<il><a href="./routes.html">Маршруты</a></il>
+				</ul>
+				<ul class="about-us">
+					<li><a href="#">О нас</a></li>
+					<li><a href="./articles.html">Статьи</a></li>
+					<li><a href="./contacts.html">Контакты</a></li>
+				</ul>
+				<ul class="account">
+					<li><a href="#">Профиль</a></li>
+					<li><a href="./basket.html">Корзина</a></li>
+					<li><a href="./favourites.html">Избранное</a></li>
+				</ul>
+
+				<div class="social">
+					<a href="https://vk.com/krugosvetka_ural" target="_blank"><img src="./images/socials/vk.svg" alt="vk"></a>
+					<a href="https://ok.ru/profile/16606458438?utm_campaign=mobile_share&utm_content=profile" target="_blank"><img src="./images/socials/ok.svg" alt="ok"></a>
+					<a href="https://t.me/krugosvetka_74" target="_blank"><img src="./images/socials/tg.svg" alt="tg" target="_blank"></a>
+				</div>
+				
+			</div>
+
+		</div>
+
+	</footer>
+</body>
+</html>

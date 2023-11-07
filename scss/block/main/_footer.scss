@@ -1,0 +1,27 @@
+.footer {
+	height: 439px;
+	padding-top: 30px;
+	background-color: var(--color-blue);
+
+	font-weight: 700;
+	line-height: 70px;
+	color: #fff;
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	ul {
+		margin-top: -9px;
+	}
+	li {
+		height: 48px;
+	}
+
+	.social {
+		display: flex;
+		column-gap: 20px;
+		padding-right: 50px;
+	}
+}

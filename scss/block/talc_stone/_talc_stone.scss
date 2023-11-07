@@ -1,0 +1,114 @@
+.talc_stone_h1 {
+	font-size: 48px;
+	font-weight: bold;
+	margin-bottom: 30px;
+	color: var(--color-text);
+	margin-top: 84px;
+}
+
+.talc_stone_subhead {
+	color: #000;
+	font-size: 24px;
+	margin: 0;
+	margin-bottom: 30px;
+}
+
+.talc_stone_img {
+	width: 1620px;
+	height: 760px;
+	border-radius: 65px;
+	margin-bottom: 120px;
+}
+
+.talc_stone_main_section {
+	display: flex;
+	flex-direction: row;
+	width: 1568px;
+	justify-content: space-between;
+	margin-bottom: 270px;
+}
+
+.talc_stone_route {
+	display: flex;
+	flex-direction: row;
+}
+
+.talc_stone_route_img {
+	margin-right: 40px;
+}
+
+.talc_stone_route_schedule {
+	width: 582px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.talc_stone_route_text {
+	font-size: 24px;
+	font-weight: bold;
+	color: var(--color-text);
+	margin: 0;
+}
+
+.talc_stone_info {
+	width: 800px;
+	display: flex;
+	flex-direction: column;
+}
+
+.talc_stone_info_text {
+	margin: 0;
+	margin-bottom: 60px;
+	font-size: 24px;
+	color: var(--color-text);
+	width: 85%;
+}
+
+.talc_stone_cards {
+	width: 800px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 40px;
+}
+
+.talc_stone_card {
+	width: 253px;
+	height: 322px;
+	border-radius: 65px;
+	object-fit: cover;
+}
+
+.talc_stone_info_book {
+	display: flex;
+	flex-direction: row;
+	width: 800px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.talc_stone_info_book_price {
+	font-size: 24px;
+	margin: 0;
+}
+
+.talc_stone_info_book_ {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+}
+
+.talc_stone_info_book_p {
+	font-size: 24px;
+	margin: 0;
+	margin-right: 18px;
+}
+
+.talc_stone_info_book_button {
+	width: 253px;
+	height: 50px;
+	font-size: 24px;
+	font-weight: 400;
+	padding-top: 8px;
+}

@@ -1,0 +1,30 @@
+.header {
+	color: var(--color-text);
+	
+	
+
+	&__row {
+		display: flex;
+		flex-direction: column;
+		p {
+			font-weight: 700;
+			font-size: 128px;
+			line-height: 48px;
+		}
+		h1 {
+			font-weight: 400;
+			font-size: 40px;
+			line-height: 48px;
+		}
+	}
+	
+}
+
+
+.home-header {
+	background-image: url('./../images/main/header/header-bg.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-bottom: 55px;
+	height: 1233px;
+}

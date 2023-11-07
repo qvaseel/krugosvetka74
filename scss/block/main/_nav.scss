@@ -1,0 +1,39 @@
+.nav {
+	
+	color: var(--color-text);
+	&__menu {
+		display: flex;
+		justify-content: space-between;
+
+		font-weight: 700;
+		line-height: 70px;
+
+		button {
+			font-weight: 700;
+			position: relative;
+		}
+	}
+}
+.home-nav {
+	margin-bottom: 227px;
+	color: #fff;
+}
+
+.settings {
+	position: absolute;
+	top: 55px;
+	right: 0;
+	//display: block;
+	display: none;
+	
+	background-color: #fff;
+	color: var(--color-text);
+	padding: 13px 19px;
+	border-radius: 30px;
+	min-width: 253px;
+	text-align: left;
+	li + li {margin-top: 13px;}
+	box-shadow: 0px 10px 20px rgba(46, 69, 85, 0.1);
+}
+
+.settings-open {display: block;}

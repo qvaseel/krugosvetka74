@@ -1,0 +1,38 @@
+.articles {
+	padding-top: 60px;
+	&2 {
+		margin-bottom: 270px;
+	}
+	margin-bottom: 60px;
+	&__text {
+		margin-bottom: 60px;
+	}
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__card {
+		display: flex;
+		width: 529px;
+		height: 497px;
+		
+		align-items: end;
+
+		border-radius: 65px;
+
+		font-weight: 700;
+		font-size: 48px;
+		line-height: 48px;
+		
+		p {
+			color: #fff;
+			padding: 40px;
+			
+		}
+
+		&:hover {
+			box-shadow: 0px 10px 20px rgba(46, 69, 85, 0.3);
+		}
+	}
+}

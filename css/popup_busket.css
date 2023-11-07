@@ -1,0 +1,142 @@
+.popup_busket {
+	color: var(--color-text);
+	top: 0;
+	left: 0;
+	z-index: 9;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255, 255, 255, .3);
+	backdrop-filter: blur(5px);
+}
+
+.popup_busket__body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+}
+
+.popup_busket__content {
+    padding-top: 40px;
+    padding-left: 65px;
+    padding-bottom: 60px;
+    margin: 0 auto;
+    position: relative;
+
+    background-color: #fff;
+    border-radius: 65px;
+    width: 1347px;
+    box-shadow: 0px 10px 20px rgba(46, 69, 85, 0.1);
+}
+
+.popup_busket__title {
+	font-size: 48px;
+	color: var(--color-text);
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.popup__sections_busket {
+    width: 1215px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.popup__left_section_busket {
+    display: flex;
+    flex-direction: column;
+}
+
+.popup__select_my_cards_busket {
+    width: 598px;
+    height: 60px;
+    background-color: #F3F3F3;
+    border-radius: 65px;
+    margin-bottom: 60px;
+    box-shadow: 0px 10px 20px rgba(46, 69, 85, 0.1);
+}
+
+.popup__input_number_card_busket {
+    width: 598px;
+    height: 60px;
+    background-color: #F3F3F3;
+    border-radius: 65px;
+    margin-bottom: 7px;
+}
+
+.popup__left_section_busket_ {
+    width: 598px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.popup__input_srok_busket {
+    width: 462px;
+    height: 60px;
+    background-color: #F3F3F3;
+    border-radius: 65px;
+}
+
+.popup__input_CVC_busket {
+    width: 116px;
+    height: 60px;
+    background-color: #F3F3F3;
+    border-radius: 65px;
+}
+
+.checkbox_busket {
+    margin-left: 40px;
+    color: black;
+    font-size: 24px;
+    margin-bottom: 60px;
+}
+
+.popup__right_section_busket {
+    width: 481px;
+    display: flex;
+    flex-direction: column;
+}
+
+.popup__right_section_busket_text div {
+    display: flex;
+    flex-direction: row;
+    width: 481px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.popup__right_section_busket_text {
+    margin-bottom: 132px;
+}
+
+.popup__right_section_busket_total {
+    width: 482px;
+    height: 124px;
+}
+
+.popup__right_section_busket_total_text {
+    width: 482px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.popup__right_section_busket_total_text p {
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--color-text);
+}
+
+.popup__basket_btn_total {
+    width: 240px;
+    height: 50px;
+    font-size: 24px;
+    font-weight: 400;
+    padding-top: 10px;
+    margin-left: 242px;
+}

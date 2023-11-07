@@ -1,0 +1,13 @@
+.btn {
+	display: inline-block;
+	color: #fff;
+	background-color: var(--accent-color);
+	padding: 16px 39px;
+	border-radius: 65px;
+	line-height: 33px;
+	transition: .2s ease-in;
+	&:hover {
+		background-color: var(--color-hover);
+		color: var(--color-text) !important;
+	}
+}

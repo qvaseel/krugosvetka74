@@ -1,0 +1,66 @@
+.tour-search {
+	padding-top: 55px;
+	margin-bottom: 60px;
+	&__row {
+		.btn {
+			padding: 13px 106px;
+			position: relative;
+			bottom: -37px;
+		}
+	}
+	&__form {
+		position: relative;
+		background-color: rgba(94, 191, 197, 0.4);
+		padding: 25px 40px 47px;
+		display: flex;
+		flex-wrap: wrap;
+		column-gap: 20px;
+		border-radius: 65px;
+		box-shadow: 0px 10px 20px rgba(46, 69, 85, 0.1);
+		select,
+		input {
+			background-color: #fff;
+			height: 60px;
+			text-align: center;
+			border-radius: 65px;
+			color: #000;
+			margin-bottom: 13px;
+		}
+		select {
+			appearance: none;
+			background-image: url('./../images/icon/arrow-down.svg');
+			background-repeat: no-repeat;
+			background-position: right;
+			background-position-x: calc(100% - 26px);
+		}
+		input {
+			width: 253px;
+		}
+		.tour-search__where-from {
+			width: 487px;
+		}
+		.tour-search__where {
+			width: 663px;
+		}
+		.tour-search__date {
+			width: 350px;
+		}
+		.tour-search__duration {
+			width: 350px;
+		}
+		.tour-search__view {
+			width: 527px;
+		}
+		.routes_date {
+			width: 330px;
+		}
+		p {
+			font-weight: 700;
+			font-size: 24px;
+			line-height: 33px;
+			color: var(--color-text);
+			margin-left: 30px;
+			margin-bottom: 5px;
+		}
+	}
+}

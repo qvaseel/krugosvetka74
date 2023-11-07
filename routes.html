@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="shortcut icon" href="./images/logo/logo-icon.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="./css/routes.css">
+
+    <script src="./js/app.js" defer></script>
+
+    <title>Маршруты</title>
+</head>
+<body>
+
+	<header class="header">
+
+		<div class="panel">
+			<div class="container">
+				<div class="header__panel">
+					<div class="logo">
+						<a href="./index.html"><img src="./images/logo/logo-header.svg" alt=""></a>
+					</div>
+		
+					<div class="header__social">
+						<p class="header__address">площадь Революции, г. Челябинск</p>
+						<div class="social">
+							<a href="https://vk.com/krugosvetka_ural" target="blanc_"><img src="./images/socials/vk.svg" alt=""></a>
+							<a href="https://ok.ru/profile/16606458438?utm_campaign=mobile_share&utm_content=profile" target="blanc_"><img src="./images/socials/ok.svg" alt=""></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="fake-panel"></div>
+		
+		<nav class="nav">
+
+			<div class="container">
+				<ul class="nav__menu">
+
+					<li><a href="./routes.html">Маршруты</a></li>
+					<li><a href="./about-us.html">О нас</a></li>
+					<li><a href="./articles.html">Статьи</a></li>
+					<li><a href="./contacts.html">Контакты</a></li>
+					<li><a href="./basket_main.html">Корзина</a></li>
+					<li><a href="./favourites.html">Избранное</a></li>
+					<li><button href="#" class="settings-btn">
+						Профиль
+
+						<ul class="settings">
+							<li><a href="./settings.html">Настройки</a></li>
+							<li class="btn-entrance">Войти</li>
+						</ul>
+					</button></li>
+					
+				</ul>
+			</div>
+			
+		</nav>
+	</header>
+	<main class="routes_main">
+		<div class="container">
+			<h1 class="routes_h1">Маршруты</h1>
+			<form class="routes_first_row">
+				<input class="routes_search" type="text" name="search" placeholder="поиск">
+				<button class="routes_btn_search">Найти</button>
+			</form>
+			<form class="routes_second_row">
+				<input class="routes_date" name="date" type="date" />
+				<select class="routes_view" name="view">
+					<option value="">Вид</option>
+					<option value="1">тематическая прог-а</option>
+					<option value="2">сюжетная программа</option>
+					<option value="3">квест</option>
+					<option value="4">поездка</option>
+					<option value="5">экскурсия</option>
+					<option value="6">детский</option>
+					<option value="7">активный</option>
+				  </select>
+				  <select class="routes_place" name="place">
+					<option value="">Место</option>
+					<option value="1">Челябинск</option>
+					<option value="2">Екатеринбург</option>
+					<option value="3">Миасс</option>
+					<option value="4">Златоуст</option>
+					<option value="5">Пермь</option>
+					<option value="6">Кунгур</option>
+					<option value="7">Троицк</option>
+					<option value="8">Чебаркуль</option>
+					<option value="9">Зюраткуль</option>
+					<option value="10">Таганай</option>
+				  </select>
+				  <div class="button_price">
+						<div class="select select01">
+							<span>Цена</span>
+							<img src="./images/routes/arrow.png" alt="">
+						</div>
+						
+						<div class="range none">
+							<div class="slider">
+								<div class="sliderValue">
+								<span>5000</span>
+							</div>
+							<div class="field">
+								<div class="value left">0</div>
+								<input type="range" min="0" max="10000" value="5000" steps="1">
+								<div class="value right">10 000</div>
+							</div>
+							</div>
+							<div class="checkbox-prise">
+								<label>
+									<input type="checkbox" id="chech-1" class="real-checkbox">
+									<span class="castom-checkbox"></span>
+									Любая
+								</label>
+							</div>
+						</div>
+						</div>
+				  
+			</form>
+
+			<!-- <label class="box_checkbox">
+				
+			</label> -->
+
+			<div class="routes_cards">
+				<div class="routes_card">
+					<div class="routes_card_img_full">
+						<img class="routes_card_img" src="images/routes/Барабанные_ёлки.jpg" alt="Барабанные ёлки 2023">
+						<img class="routes_card_img_liked" src="images/routes/liked.png" alt="" onclick='this.src="images/routes/liked_click.png"' />
+					</div>
+					<div class="routes_card_text">
+						<p class="routes_card_text_head">Барабанные ёлки 2023</p>
+						<p class="routes_card_text_subhead">музыкальный квест</p>
+						<p class="routes_card_price">2500 руб.</p>
+						<div class="routes_info">
+							<img src="images/routes/hours.png" alt="" class="routes_small_img">
+							<p class="routes_card_text_info">2 часа</p>
+						</div>
+						<div class="routes_info">
+							<img src="images/routes/location.png" alt="" class="routes_small_img2">
+							<p class="routes_card_text_info">2 места</p>
+						</div>
+					</div>
+					<button class="routes_btn btn">Забронировать</button>
+				</div>
+				<div class="routes_card">
+					<div class="routes_card_img_full">
+						<img class="routes_card_img" src="images/routes/Снежный_бум.jpg" alt="Барабанные ёлки 2023">
+						<img class="routes_card_img_liked" src="images/routes/liked.png" alt="" onclick='this.src="images/routes/liked_click.png"' />
+					</div>
+					<div class="routes_card_text">
+						<p class="routes_card_text_head">Снежный бум</p>
+						<p class="routes_card_text_subhead">сюжетная программа</p>
+						<p class="routes_card_price">2150 руб.</p>
+						<div class="routes_info">
+							<img src="images/routes/hours.png" alt="" class="routes_small_img">
+							<p class="routes_card_text_info">2 часа</p>
+						</div>
+						<div class="routes_info">
+							<img src="images/routes/location.png" alt="" class="routes_small_img2">
+							<p class="routes_card_text_info">1 место</p>
+						</div>
+					</div>
+					<button class="routes_btn btn">Забронировать</button>
+				</div>
+				<div class="routes_card">
+					<div class="routes_card_img_full">
+						<img class="routes_card_img" src="images/routes/Легенды_севера.jpg" alt="Барабанные ёлки 2023">
+						<img class="routes_card_img_liked" src="images/routes/liked.png" alt="" onclick='this.src="images/routes/liked_click.png"' />
+					</div>
+					<div class="routes_card_text">
+						<p class="routes_card_text_head">Легенды севера</p>
+						<p class="routes_card_text_subhead">тематическая программа</p>
+						<p class="routes_card_price">2250 руб.</p>
+						<div class="routes_info">
+							<img src="images/routes/hours.png" alt="" class="routes_small_img">
+							<p class="routes_card_text_info">1 день</p>
+						</div>
+						<div class="routes_info">
+							<img src="images/routes/location.png" alt="" class="routes_small_img2">
+							<p class="routes_card_text_info">1 место</p>
+						</div>
+					</div>
+					<button class="routes_btn btn">Забронировать</button>
+				</div>
+				<div class="routes_card">
+					<div class="routes_card_img_full">
+						<img class="routes_card_img" src="images/routes/Шаман_трёх_миров.jpg" alt="Барабанные ёлки 2023">
+						<img class="routes_card_img_liked" src="images/routes/liked.png" alt="" onclick='this.src="images/routes/liked_click.png"' />
+					</div>
+					<div class="routes_card_text">
+						<p class="routes_card_text_head">Шаман трёх миров, аквилон</p>
+						<p class="routes_card_text_subhead">тематическая программа</p>
+						<p class="routes_card_price">2250 руб.</p>
+						<div class="routes_info">
+							<img src="images/routes/hours.png" alt="" class="routes_small_img">
+							<p class="routes_card_text_info">1 день</p>
+						</div>
+						<div class="routes_info">
+							<img src="images/routes/location.png" alt="" class="routes_small_img2">
+							<p class="routes_card_text_info">1 место</p>
+						</div>
+					</div>
+					<button class="routes_btn btn">Забронировать</button>
+				</div>
+				<div class="routes_card">
+					<div class="routes_card_img_full">
+						<img class="routes_card_img" src="images/routes/Хранители_мечты.jpg" alt="Барабанные ёлки 2023">
+						<img class="routes_card_img_liked" src="images/routes/liked.png" alt="" onclick='this.src="images/routes/liked_click.png"' />
+					</div>
+					<div class="routes_card_text">
+						<p class="routes_card_text_head">Хранители мечты</p>
+						<p class="routes_card_text_subhead">тематичская программа</p>
+						<p class="routes_card_price">2150 руб.</p>
+						<div class="routes_info">
+							<img src="images/routes/hours.png" alt="" class="routes_small_img">
+							<p class="routes_card_text_info">1 день</p>
+						</div>
+						<div class="routes_info">
+							<img src="images/routes/location.png" alt="" class="routes_small_img2">
+							<p class="routes_card_text_info">1 место</p>
+						</div>
+					</div>
+					<button class="routes_btn btn">Забронировать</button>
+				</div>
+				<div class="routes_card">
+					<div class="routes_card_img_full">
+						<img class="routes_card_img" src="images/routes/Ночь_перед_рождеством.jpg" alt="Барабанные ёлки 2023">
+						<img class="routes_card_img_liked" src="images/routes/liked.png" alt="" onclick='this.src="images/routes/liked_click.png"' />
+					</div>
+					<div class="routes_card_text">
+						<p class="routes_card_text_head">Ночь перед рождеством</p>
+						<p class="routes_card_text_subhead">тематическая программа</p>
+						<p class="routes_card_price">2200 руб.</p>
+						<div class="routes_info">
+							<img src="images/routes/hours.png" alt="" class="routes_small_img">
+							<p class="routes_card_text_info">2 часа</p>
+						</div>
+						<div class="routes_info">
+							<img src="images/routes/location.png" alt="" class="routes_small_img2">
+							<p class="routes_card_text_info">1 место</p>
+						</div>
+					</div>
+					<button class="routes_btn btn">Забронировать</button>
+				</div>
+				<div class="routes_card">
+					<div class="routes_card_img_full">
+						<img class="routes_card_img" src="images/routes/Новогодний_фейерверк.jpg" alt="Барабанные ёлки 2023">
+						<img class="routes_card_img_liked" src="images/routes/liked.png" alt="" onclick='this.src="images/routes/liked_click.png"' />
+					</div>
+					<div class="routes_card_text">
+						<p class="routes_card_text_head">Новогодний фейерверк</p>
+						<p class="routes_card_text_subhead">музыкальный квест</p>
+						<p class="routes_card_price">2200 руб.</p>
+						<div class="routes_info">
+							<img src="images/routes/hours.png" alt="" class="routes_small_img">
+							<p class="routes_card_text_info">2 часа</p>
+						</div>
+						<div class="routes_info">
+							<img src="images/routes/location.png" alt="" class="routes_small_img2">
+							<p class="routes_card_text_info">1 место</p>
+						</div>
+					</div>
+					<button class="routes_btn btn">Забронировать</button>
+				</div>
+				<div class="routes_card">
+					<div class="routes_card_img_full">
+						<img class="routes_card_img" src="images/routes/Новогодние_приключения_старшины_Морозова.jpg" alt="Барабанные ёлки 2023">
+						<img class="routes_card_img_liked" src="images/routes/liked.png" alt="" onclick='this.src="images/routes/liked_click.png"' />
+					</div>
+					<div class="routes_card_text">
+						<p class="routes_card_text_head">Новогодние приключения<br>старшины Морозова</p>
+						<p class="routes_card_text_subhead1">тематичсекая программа</p>
+						<p class="routes_card_price">2200 руб.</p>
+						<div class="routes_info">
+							<img src="images/routes/hours.png" alt="" class="routes_small_img">
+							<p class="routes_card_text_info">2 часа</p>
+						</div>
+						<div class="routes_info">
+							<img src="images/routes/location.png" alt="" class="routes_small_img2">
+							<p class="routes_card_text_info">1 место</p>
+						</div>
+					</div>
+					<button class="routes_btn btn">Забронировать</button>
+				</div>
+				<div class="routes_card">
+					<div class="routes_card_img_full">
+						<img class="routes_card_img" src="images/routes/Киностудия_крокодилы_Екатерибург.jpg" alt="Барабанные ёлки 2023">
+						<img class="routes_card_img_liked" src="images/routes/liked.png" alt="" onclick='this.src="images/routes/liked_click.png"' />
+					</div>
+					<div class="routes_card_text">
+						<p class="routes_card_text_head">Киностудия, крокодилы,<br>Екатеринбург</p>
+						<p class="routes_card_text_subhead1">поездка</p>
+						<p class="routes_card_price">6600 руб.</p>
+						<div class="routes_info">
+							<img src="images/routes/hours.png" alt="" class="routes_small_img">
+							<p class="routes_card_text_info">2 дня</p>
+						</div>
+						<div class="routes_info">
+							<img src="images/routes/location.png" alt="" class="routes_small_img2">
+							<p class="routes_card_text_info">6 мест</p>
+						</div>
+					</div>
+					<button class="routes_btn btn">Забронировать</button>
+				</div>
+				<div class="routes_card">
+					<div class="routes_card_img_full">
+						<a href="./talc_stone.html"><img class="routes_card_img" src="images/routes/Талькова_камень.jpg" alt="Барабанные ёлки 2023"></a>
+						<img class="routes_card_img_liked" src="images/routes/liked.png" alt="" onclick='this.src="images/routes/liked_click.png"' />
+					</div>
+					<div class="routes_card_text">
+						<p class="routes_card_text_head">Тальков камень, фарофровый завод,<br>Сысерть</p>
+						<p class="routes_card_text_subhead1">экскурсия</p>
+						<p class="routes_card_price">2250 руб.</p>
+						<div class="routes_info">
+							<img src="images/routes/hours.png" alt="" class="routes_small_img">
+							<p class="routes_card_text_info">1 день</p>
+						</div>
+						<div class="routes_info">
+							<img src="images/routes/location.png" alt="" class="routes_small_img2">
+							<p class="routes_card_text_info">4 места</p>
+						</div>
+					</div>
+					<button class="routes_btn btn">Забронировать</button>
+				</div>
+				<div class="routes_card">
+					<div class="routes_card_img_full">
+						<img class="routes_card_img" src="images/routes/Музей_Бажова.jpg" alt="Барабанные ёлки 2023">
+						<img class="routes_card_img_liked" src="images/routes/liked.png" alt="" onclick='this.src="images/routes/liked_click.png"' />
+					</div>
+					<div class="routes_card_text">
+						<p class="routes_card_text_head">Музей Бажова, фарофровый<br>завод, Сысерть</p>
+						<p class="routes_card_text_subhead1">экскурсия</p>
+						<p class="routes_card_price">2200 руб.</p>
+						<div class="routes_info">
+							<img src="images/routes/hours.png" alt="" class="routes_small_img">
+							<p class="routes_card_text_info">1 день</p>
+						</div>
+						<div class="routes_info">
+							<img src="images/routes/location.png" alt="" class="routes_small_img2">
+							<p class="routes_card_text_info">5 мест</p>
+						</div>
+					</div>
+					<button class="routes_btn btn">Забронировать</button>
+				</div>
+				<div class="routes_card">
+					<div class="routes_card_img_full">
+						<img class="routes_card_img" src="images/routes/Аировка_Косотур_Златоуст.jpg" alt="Барабанные ёлки 2023">
+						<img class="routes_card_img_liked" src="images/routes/liked.png" alt="" onclick='this.src="images/routes/liked_click.png"' />
+					</div>
+					<div class="routes_card_text">
+						<p class="routes_card_text_head">Аировка, Косотур, Златоуст</p>
+						<p class="routes_card_text_subhead">экскурсия</p>
+						<p class="routes_card_price">1950 руб.</p>
+						<div class="routes_info">
+							<img src="images/routes/hours.png" alt="" class="routes_small_img">
+							<p class="routes_card_text_info">1 день</p>
+						</div>
+						<div class="routes_info">
+							<img src="images/routes/location.png" alt="" class="routes_small_img2">
+							<p class="routes_card_text_info">4 места</p>
+						</div>
+					</div>
+					<button class="routes_btn btn">Забронировать</button>
+				</div>
+				<div class="routes_card">
+					<div class="routes_card_img_full">
+						<img class="routes_card_img" src="images/routes/Колокольня_Семибратка_Златоуст.jpg" alt="Барабанные ёлки 2023">
+						<img class="routes_card_img_liked" src="images/routes/liked.png" alt="" onclick='this.src="images/routes/liked_click.png"' />
+					</div>
+					<div class="routes_card_text">
+						<p class="routes_card_text_head">Колокольня, Семибратка, Златоуст</p>
+						<p class="routes_card_text_subhead">экскурсия</p>
+						<p class="routes_card_price">1850 руб.</p>
+						<div class="routes_info">
+							<img src="images/routes/hours.png" alt="" class="routes_small_img">
+							<p class="routes_card_text_info">1 день</p>
+						</div>
+						<div class="routes_info">
+							<img src="images/routes/location.png" alt="" class="routes_small_img2">
+							<p class="routes_card_text_info">3 места</p>
+						</div>
+					</div>
+					<button class="routes_btn btn">Забронировать</button>
+				</div>
+				<div class="routes_card">
+					<div class="routes_card_img_full">
+						<img class="routes_card_img" src="images/routes/Косотур_Семибратка_Златоуст.jpg" alt="Барабанные ёлки 2023">
+						<img class="routes_card_img_liked" src="images/routes/liked.png" alt="" onclick='this.src="images/routes/liked_click.png"' />
+					</div>
+					<div class="routes_card_text">
+						<p class="routes_card_text_head">Косотур, Семибратка, Златоуст</p>
+						<p class="routes_card_text_subhead">экскурсия</p>
+						<p class="routes_card_price">1700 руб.</p>
+						<div class="routes_info">
+							<img src="images/routes/hours.png" alt="" class="routes_small_img">
+							<p class="routes_card_text_info">1 день</p>
+						</div>
+						<div class="routes_info">
+							<img src="images/routes/location.png" alt="" class="routes_small_img2">
+							<p class="routes_card_text_info">3 места</p>
+						</div>
+					</div>
+					<button class="routes_btn btn">Забронировать</button>
+				</div>
+				<div class="routes_card">
+					<div class="routes_card_img_full">
+						<img class="routes_card_img" src="images/routes/Аировка_Семибратка_Златоуст.jpg" alt="Барабанные ёлки 2023">
+						<img class="routes_card_img_liked" src="images/routes/liked.png" alt="" onclick='this.src="images/routes/liked_click.png"' />
+					</div>
+					<div class="routes_card_text">
+						<p class="routes_card_text_head">Аировка, Семибратка, Златоуст</p>
+						<p class="routes_card_text_subhead">экскурсия</p>
+						<p class="routes_card_price">2050 руб.</p>
+						<div class="routes_info">
+							<img src="images/routes/hours.png" alt="" class="routes_small_img">
+							<p class="routes_card_text_info">1 день</p>
+						</div>
+						<div class="routes_info">
+							<img src="images/routes/location.png" alt="" class="routes_small_img2">
+							<p class="routes_card_text_info">3 места</p>
+						</div>
+					</div>
+					<button class="routes_btn btn">Забронировать</button>
+				</div>
+				<div class="routes_card">
+					<div class="routes_card_img_full">
+						<img class="routes_card_img" src="images/routes/В_гости_к_павлинам.jpg" alt="Барабанные ёлки 2023">
+						<img class="routes_card_img_liked" src="images/routes/liked.png" alt="" onclick='this.src="images/routes/liked_click.png"' />
+					</div>
+					<div class="routes_card_text">
+						<p class="routes_card_text_head">В гости к павлинам и оленям</p>
+						<p class="routes_card_text_subhead">экскурсия</p>
+						<p class="routes_card_price">2250 руб.</p>
+						<div class="routes_info">
+							<img src="images/routes/hours.png" alt="" class="routes_small_img">
+							<p class="routes_card_text_info">1 день</p>
+						</div>
+						<div class="routes_info">
+							<img src="images/routes/location.png" alt="" class="routes_small_img2">
+							<p class="routes_card_text_info">1 место</p>
+						</div>
+					</div>
+					<button class="routes_btn btn">Забронировать</button>
+				</div>
+			</div>
+
+			<div class="routes_pages">
+				<div id="oval" class="routes_oval_first"><a href="#" class="routes_pages_link">1</a></div>
+				<div id="oval" class="routes_oval_other"><a href="#" class="routes_pages_link">2</a></div>
+				<div id="oval" class="routes_oval_other"><a href="#" class="routes_pages_link">3</a></div>
+				<div id="oval" class="routes_oval_other"><a href="#" class="routes_pages_link">4</a></div>
+			</div>
+		</div>
+	</main>
+
+	<div class="popup popup-entrance none" id="popup popup-entrance">
+		<div class="popup__body">
+			<div class="popup__content">
+				<button class="popup__close"></button>
+				<h3 class="popup__title title">
+					Вход
+				</h3>
+				<form class="popup__form popup__form_entrance">
+					<label for="tel">
+						<p class="popup__text">Телефон</p>
+						<input type="tel" id="tel">
+						<button class="btn__entrance">Войти</button>
+						<p>или</p>
+						<button class="btn__registration" type="button">Зарегистрироваться</button>
+						<p class="popup__warning">Авторизируясь, вы соглашаетесь 
+							с Политикой конфиденциальности</p>
+					</label>
+				</form>
+
+				<form class="popup__form popup__form_registration none">
+					<label for="tel">
+						<p class="popup__text">Телефон</p>
+						<input type="tel" id="tel">
+						<p class="popup__text">Пароль</p>
+						<input type="password" id="tel">
+						<p class="popup__text">Повторите пароль</p>
+						<input type="password" id="tel">
+						<button class="btn__entrance">Зарегистрироваться</button>
+						<p class="popup__warning">Авторизируясь, вы соглашаетесь 
+							с Политикой конфиденциальности</p>
+					</label>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer">
+		
+		<div class="container">
+
+			<div class="footer__row">
+				<div class="logo">
+					<a href="#"><img src="./images/logo/logo-footer.png" alt=""></a>
+				</div>
+				
+				<ul class="nav-menu">
+					<il><a href="./routes.html">Маршруты</a></il>
+				</ul>
+				<ul class="about-us">
+					<li><a href="#">О нас</a></li>
+					<li><a href="./articles.html">Статьи</a></li>
+					<li><a href="./contacts.html">Контакты</a></li>
+				</ul>
+				<ul class="account">
+					<li><a href="#">Профиль</a></li>
+					<li><a href="./basket.html">Корзина</a></li>
+					<li><a href="./favourites.html">Избранное</a></li>
+				</ul>
+
+				<div class="social">
+					<a href="https://vk.com/krugosvetka_ural" target="_blank"><img src="./images/socials/vk.svg" alt="vk"></a>
+					<a href="https://ok.ru/profile/16606458438?utm_campaign=mobile_share&utm_content=profile" target="_blank"><img src="./images/socials/ok.svg" alt="ok"></a>
+					<a href="https://t.me/krugosvetka_74" target="_blank"><img src="./images/socials/tg.svg" alt="tg" target="_blank"></a>
+				</div>
+				
+			</div>
+
+		</div>
+
+	</footer>
+
+	<script src="js/routes_script.js"></script>
+</body>
+</html>

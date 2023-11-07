@@ -1,0 +1,39 @@
+.panel {
+	background-color: var(--bg-color);
+	box-shadow: 0px 10px 20px 10px rgba(46, 69, 85, 0.1);
+	padding: 13px 0;
+	min-height: 123px;
+	position: fixed;
+	width: 100%;
+	z-index: 9;
+}
+.header {
+	&__panel {
+		color: var(--color-text);
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__social {
+		width: 672px;
+
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		p {
+			font-size: 24px;
+			line-height: 70px;
+		}
+
+		.social {
+			display: flex;
+			column-gap: 20px;
+		}
+	}
+}
+
+.fake-panel {
+	height: 127px;
+}
